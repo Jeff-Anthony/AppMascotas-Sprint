@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activities.RegistroActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+       <EditText
+           android:id="@+id/edit_nombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:hint="Ingrese su Nombre"
+           />
+
+        <EditText
+            android:id="@+id/edit_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Ingrese su Correo"
+            />
+        <EditText
+            android:id="@+id/edit_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:hint="Ingrese su Contraseña"
+            />
+
+        <Button
+            android:id="@+id/registro_usuario_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="RegistroUsuario"
+            android:text="Registrar"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

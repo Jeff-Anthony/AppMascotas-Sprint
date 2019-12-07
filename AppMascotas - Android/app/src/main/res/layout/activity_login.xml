@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="223dp"
+            android:layout_height="181dp"
+            android:src="@drawable/medicinageneral" />
+
+     <EditText
+         android:id="@+id/correo_ingreso"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:inputType="textEmailAddress"
+         android:hint="Ingrese su Correo Electrónico"/>
+
+      <EditText
+          android:id="@+id/contraseña_ingreso"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:layout_marginBottom="10dp"
+          android:hint="Ingrese su Contraseña"/>
+
+
+      <Button
+          android:id="@+id/button_ingreso"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:text="Ingreso"
+
+          />
+
+        <Button
+            android:id="@+id/button_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Registro"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imagen_cardview"
+        android:layout_width="114dp"
+        android:layout_height="136dp"
+        android:src="@drawable/note" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imagen_cardview"
+            android:text="Nombre:   "/>
+
+        <TextView
+            android:id="@+id/nombre_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/nombre"
+            android:text="Hugo Nombre"/>
+
+        <ImageButton
+            android:id="@+id/menu_cardview"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_menu_dots"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"/>
+
+
+        <TextView
+         android:id="@+id/raza"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/nombre"
+         android:layout_marginBottom="10dp"
+         android:layout_toEndOf="@id/imagen_cardview"
+         android:text="Raza:   "/>
+
+        <TextView
+            android:id="@+id/raza_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:layout_toEndOf="@id/nombre"
+            android:text="Hugo Raza"/>
+
+
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/raza"
+            android:layout_toEndOf="@id/imagen_cardview"
+            android:text="Edad:   "/>
+
+        <TextView
+            android:id="@+id/edad_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/raza"
+            android:layout_toEndOf="@id/nombre"
+            android:text="Hugo Edad"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

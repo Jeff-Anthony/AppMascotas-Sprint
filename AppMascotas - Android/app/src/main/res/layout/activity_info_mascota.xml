@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InfoMascotaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/info_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/note"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/info_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/raza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raza: "
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/info_raza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hugo Raza"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/raza"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/edad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad: "
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/info_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hugo Edad"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/edad"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/dueño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dueño: "
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/info_dueño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hugo dueño"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/dueño"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo: "
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/info_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hugo Correo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/correo"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
